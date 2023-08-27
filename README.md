@@ -20,7 +20,7 @@ This project is supposed to progress by small step from a .
  </p>
 
 - [ ] Install necessary package (Git, Python, ...)
-- [ ] Instal Pycharm Community for Linux ARM
+- [X] Instal Pycharm Community for Linux ARM
  - Download Pycharm Community (https://www.jetbrains.com/pycharm/)
  - Add Pycharm to Favorites (https://askubuntu.com/questions/391439/how-can-i-set-up-pycharm-to-launch-from-the-launcher)
       
