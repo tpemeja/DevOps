@@ -11,6 +11,8 @@ This project is supposed to progress by small step from a .
 ## 1. Set up developping environment
 
 - [X] Create Linux VM on M1 MacBook using UTM / Ubuntu
+ - Download Ubuntu Server iso for ARM (https://ubuntu.com/download/server/arm)
+ - How to install Ubuntu on M1 using UTM (https://docs.getutm.app/guides/ubuntu/)
 - [ ] Install necessary package (Git, Python, ...)
 - [ ] Instal IDE (Pycharm, ...)
 
