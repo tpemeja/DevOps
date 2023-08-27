@@ -8,7 +8,7 @@ This project is supposed to progress by small step from a .
  _(source: [orangematter](https://orangematter.solarwinds.com/2022/03/21/what-is-devops/))_
 
 # Steps
-## 1. Set up developping environment
+## 1. Set up developing environment
 
 - [X] Create Linux VM on M1 MacBook using UTM / Ubuntu
  - Download Ubuntu Server iso for ARM (https://ubuntu.com/download/server/arm)
@@ -20,7 +20,7 @@ This project is supposed to progress by small step from a .
  </p>
 
 - [ ] Install necessary package (Git, Python, ...)
-- [X] Instal Pycharm Community for Linux ARM
+- [X] Install Pycharm Community for Linux ARM
  - Download Pycharm Community (https://www.jetbrains.com/pycharm/)
  - Add Pycharm to Favorites (https://askubuntu.com/questions/391439/how-can-i-set-up-pycharm-to-launch-from-the-launcher)
       
@@ -29,7 +29,7 @@ This project is supposed to progress by small step from a .
 
 - [ ] ...
 
-## 3. Implement DevOps fundations (CI/CD)
+## 3. Implement DevOps foundations (CI/CD)
 
 - [ ] ...
 
