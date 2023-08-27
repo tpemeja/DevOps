@@ -19,7 +19,7 @@ This project is supposed to progress by small step from a .
     <img width="400" alt="Screenshot 2023-08-27 at 16 39 37" src="https://github.com/tpemeja/devOps/assets/74564644/28e92d42-8670-4870-9bc5-fbf2cd851fd9">
  </p>
 
-- [ ] Install necessary package (Git, Python, ...)
+- [X] Install necessary package (Git, Python, ...)
 - [X] Install Pycharm Community for Linux ARM
  - Download Pycharm Community (https://www.jetbrains.com/pycharm/)
  - Add Pycharm to Favorites (https://askubuntu.com/questions/391439/how-can-i-set-up-pycharm-to-launch-from-the-launcher)
