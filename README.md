@@ -15,7 +15,10 @@ This project is supposed to progress by small step from a .
  - How to install Ubuntu on M1 using UTM (https://docs.getutm.app/guides/ubuntu/)
  - Change GUI to fix Firefox probelm (https://techblog.shippio.io/how-to-run-an-ubuntu-22-04-vm-on-m1-m2-apple-silicon-9554adf4fda1)
 - [ ] Install necessary package (Git, Python, ...)
-- [ ] Instal IDE (Pycharm, ...)
+- [ ] Instal Pycharm Community for Linux ARM
+ - Download Pycharm Community (https://www.jetbrains.com/pycharm/)
+ - Add Pycharm to Favorites (https://askubuntu.com/questions/391439/how-can-i-set-up-pycharm-to-launch-from-the-launcher)
+      
 
 ## 2. Create basic website using Django or Flask
 
