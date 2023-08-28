@@ -25,9 +25,10 @@ This project is supposed to progress by small step from a .
  - Add Pycharm to Favorites (https://askubuntu.com/questions/391439/how-can-i-set-up-pycharm-to-launch-from-the-launcher)
       
 
-## 2. Create basic website using Django or Flask
+## 2. Create basic website using Django
 
-- [ ] ...
+- [X] Create basic website following official documentation (https://docs.djangoproject.com/en/4.2/)
+- [ ] Use PostgreSQL
 
 ## 3. Implement DevOps foundations (CI/CD)
 
