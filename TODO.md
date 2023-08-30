@@ -1,1 +1,1 @@
-- Continue Django tutorial https://docs.djangoproject.com/en/4.2/intro/tutorial02/#introducing-the-django-admin
+- Continue Django tutorial https://docs.djangoproject.com/en/4.2/intro/tutorial03/

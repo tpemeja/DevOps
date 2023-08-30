@@ -15,6 +15,7 @@ This project is supposed to progress by small step from a .
  - Install Ubuntu on M1 using UTM (https://docs.getutm.app/guides/ubuntu/)
  - Change GUI to fix Firefox problem (https://techblog.shippio.io/how-to-run-an-ubuntu-22-04-vm-on-m1-m2-apple-silicon-9554adf4fda1)
  - Change ubuntu keyboard to map French Macintosh keyboard with Option key for `|,~,[,],...`
+ - Map Command key to CMD + C and CMD + V (https://askubuntu.com/a/1073790)
  <p align="center">
     <img width="400" alt="Screenshot 2023-08-27 at 16 39 37" src="https://github.com/tpemeja/devOps/assets/74564644/28e92d42-8670-4870-9bc5-fbf2cd851fd9">
  </p>
