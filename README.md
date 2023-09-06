@@ -24,7 +24,7 @@ This project is supposed to progress by small step from a .
 - [X] Install Pycharm Community for Linux ARM
  - Download Pycharm Community (https://www.jetbrains.com/pycharm/)
  - Add Pycharm to Favorites (https://askubuntu.com/questions/391439/how-can-i-set-up-pycharm-to-launch-from-the-launcher)
-      
+- [ ] Setup and use AI collaborator (Github Collaborator, Codeium, ...)
 
 ## 2. Create basic website using Django
 
