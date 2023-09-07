@@ -1,1 +1,1 @@
-- Continue Django tutorial https://docs.djangoproject.com/en/4.2/intro/tutorial03/#removing-hardcoded-urls-in-templates
+- Continue Django tutorial https://docs.djangoproject.com/en/4.2/intro/tutorial04/
