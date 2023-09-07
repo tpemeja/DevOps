@@ -1,1 +1,2 @@
-- Continue Django tutorial https://docs.djangoproject.com/en/4.2/intro/tutorial04/
+- Continue Django tutorial https://docs.djangoproject.com/en/4.2/intro/tutorial04/#use-generic-views-less-code-is-better
+- Check for race condition https://docs.djangoproject.com/en/4.2/ref/models/expressions/#avoiding-race-conditions-using-f
