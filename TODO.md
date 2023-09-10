@@ -1,3 +1,3 @@
-- [ ] Continue Django tutorial https://docs.djangoproject.com/en/4.2/intro/tutorial06/
+- [ ] Continue Django tutorial https://docs.djangoproject.com/en/4.2/intro/tutorial07/
 - [x] Check for race condition https://docs.djangoproject.com/en/4.2/ref/models/expressions/#avoiding-race-conditions-using-f
 - [ ] Check for Django testing ("in-browser" testing, continuous integration, code coverage, ...) https://docs.djangoproject.com/en/4.2/topics/testing/
