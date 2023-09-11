@@ -2,3 +2,5 @@
 - [x] Check for race condition https://docs.djangoproject.com/en/4.2/ref/models/expressions/#avoiding-race-conditions-using-f
 - [ ] Check for Django testing ("in-browser" testing, continuous integration, code coverage, ...) https://docs.djangoproject.com/en/4.2/topics/testing/
 - [ ] Write reusable apps https://docs.djangoproject.com/en/4.2/intro/reusable-apps/
+- [ ] Look for project planning tools (https://www.atlassian.com/devops/devops-tools, https://orionesolutions.com/guide-to-devops-phases-tools-uses-and-principles/)
+- [ ] Thinks about database design
