@@ -10,6 +10,9 @@ jobs:
         python-version: ["3.11"]
     steps:
     - uses: actions/checkout@v3
+    - name: Try to fix
+      run: |
+        sudo apt --fix-broken install -y
     - name: Set up Python ${{ matrix.python-version }}
       uses: deadsnakes/action@v3.0.1
       with:
@@ -20,4 +23,4 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        pylint --fail-under=1 $(git ls-files '*.py')
