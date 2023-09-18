@@ -33,7 +33,7 @@ This project is supposed to progress by small step from a .
 
 ## 3. Implement DevOps foundations (CI/CD)
 
-- [ ] ...
+- [X] Install self-hosted runner (https://github.com/tpemeja/DevOps/settings/actions/runners/new?arch=arm64&os=linux)
 
 ## 4. Deploy the application using containers
 
