@@ -1,3 +1,7 @@
+"""
+Define admin section for Poll Application
+"""
+
 from django.contrib import admin
 
 from .models import Choice, Question
