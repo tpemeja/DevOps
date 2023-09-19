@@ -10,6 +10,9 @@ jobs:
         python-version: ["3.11"]
     steps:
     - uses: actions/checkout@v3
+    - name: Fix python installation
+      run: |
+        sudo apt --fix-broken install -y
     - name: Set up Python ${{ matrix.python-version }}
       uses: deadsnakes/action@v3.0.1
       with:
