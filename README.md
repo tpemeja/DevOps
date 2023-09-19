@@ -37,6 +37,9 @@ This project is supposed to progress by small step from a .
 - [X] Fix python installation in Runner for Ubuntu-ARM64 (https://github.com/actions/setup-python/issues/678#issuecomment-1687224281)
  - Change python installtion to deadsnakes/action@v3.0.1 (https://github.com/deadsnakes/action)
  - Possibly have to do `sudo apt --fix-broken install -y` before installation (once)
+- [X] Create basic Pylint CI action
+ - Install venv with requirements
+ - Use pylint with venv (`python $(which pylint)`)
 
 ## 4. Deploy the application using containers
 
