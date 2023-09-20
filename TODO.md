@@ -9,7 +9,7 @@
 
 # GitHub CI
 - [ ] Use variable and secret for sudo (https://snyk.io/blog/how-to-use-github-actions-environment-variables/, https://github.com/tpemeja/DevOps/settings/variables/actions)
-- [ ] Use -S option
+- [ ] Use -S option to fix sudo on M1 (https://stackoverflow.com/questions/62370850/provide-password-to-github-actions-macos-self-hosted-runner)
 - [ ] Check if code necessary
 ```
 - name: Fix python installation
