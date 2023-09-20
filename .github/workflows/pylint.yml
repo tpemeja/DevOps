@@ -2,6 +2,9 @@ name: Pylint
 
 on: [push]
 
+env:
+  GLOBAL_VAR: TEST
+
 jobs:
   build:
     runs-on: self-hosted
