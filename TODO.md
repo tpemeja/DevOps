@@ -8,9 +8,9 @@
 - [x] Fix Django Debug Toolbar in application (https://stackoverflow.com/questions/32791313/django-debug-toolbar-shows-at-root-url-but-not-in-app-url)
 
 # GitHub CI
-- [ ] Use variable and secret for sudo (https://snyk.io/blog/how-to-use-github-actions-environment-variables/, https://github.com/tpemeja/DevOps/settings/variables/actions)
-- [ ] Use -S option to fix sudo on M1 (https://stackoverflow.com/questions/62370850/provide-password-to-github-actions-macos-self-hosted-runner)
-- [ ] Check if code necessary
+- [X] Use variable and secret for sudo (https://snyk.io/blog/how-to-use-github-actions-environment-variables/, https://github.com/tpemeja/DevOps/settings/variables/actions)
+- [X] Use -S option to fix sudo on M1 (https://stackoverflow.com/questions/62370850/provide-password-to-github-actions-macos-self-hosted-runner)
+- [X] Check if code necessary
 ```
 - name: Fix python installation
   run: |
