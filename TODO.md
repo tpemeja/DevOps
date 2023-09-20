@@ -8,8 +8,8 @@
 - [x] Fix Django Debug Toolbar in application (https://stackoverflow.com/questions/32791313/django-debug-toolbar-shows-at-root-url-but-not-in-app-url)
 
 # GitHub CI
-- [ ] Setup variable for sudo (https://docs.gitlab.com/ee/ci/variables/)
-- [ ] Use -S option to
+- [ ] Use variable and secret for sudo (https://snyk.io/blog/how-to-use-github-actions-environment-variables/, https://github.com/tpemeja/DevOps/settings/variables/actions)
+- [ ] Use -S option
 - [ ] Check if code necessary
 ```
 - name: Fix python installation
