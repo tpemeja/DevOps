@@ -1,0 +1,2 @@
+variables:
+  GLOBAL_VAR: "A global variable"
