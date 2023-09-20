@@ -24,4 +24,4 @@ jobs:
         echo $GLOBAL_VAR
     - name: Analysing the code with pylint
       run: |
-        python $(which pylint) --fail-under=1 $(git ls-files '*.py')
+        python $(which pylint) --fail-under=1 $(git ls-files '*.py') 
