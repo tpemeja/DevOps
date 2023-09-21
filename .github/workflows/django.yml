@@ -30,3 +30,4 @@ jobs:
       run: |
         cd mysite
         python manage.py test
+        echo $TEST
