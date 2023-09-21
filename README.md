@@ -40,6 +40,8 @@ This project is supposed to progress by small step from a .
 - [X] Create basic Pylint CI action
  - Install venv with requirements
  - Use pylint with venv (`python $(which pylint)`)
+ - Use environment variables in self-hosted runner with $TEST (Modify `.env` [TEST=test] and restart runner)
+ - Define environment variables in GitHub Action ${{vars.$TEST}} (Add variable in `github.com/PROJECT_NAME/settings/variables/actions`, for more information [GitHub Documentation](https://docs.github.com/en/actions/learn-github-actions/variables)
 
 ## 4. Deploy the application using containers
 

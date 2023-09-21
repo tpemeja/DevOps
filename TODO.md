@@ -16,3 +16,5 @@
   run: |
     sudo apt --fix-broken install -y
 ```
+- [ ] Check if it's mandatory to put password when start self-hosted runner
+- [ ] Improve CI with new actions, maybe with credentials in self-hosted runner
