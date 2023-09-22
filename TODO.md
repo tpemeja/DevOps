@@ -18,3 +18,4 @@
 ```
 - [ ] Check if it's mandatory to put password when start self-hosted runner
 - [ ] Improve CI with new actions, maybe with credentials in self-hosted runner
+- [ ] Check how to do DevOps with Python https://realpython.com/learning-paths/python-devops/
