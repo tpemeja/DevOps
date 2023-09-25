@@ -45,9 +45,12 @@ This project is supposed to progress by small step from a .
  - [ ] Use `pytest` for additional testing
  - [ ] Create functional and unit testing
 
-## 4. Deploy the application using containers
+## 4. Deploy the application using containers (https://semaphoreci.com/community/tutorials/dockerizing-a-python-django-web-application)
 
-- [ ] ...
+- [X] Install Docker (https://docs.docker.com/engine/install/ubuntu/#install-from-a-package)
+ - Add user to **docker** group (`sudo usermod -aG docker ${USER}`)
+- [X] Generate Django Docker image (https://learndjango.com/tutorials/django-docker-and-postgresql-tutorial)
+ - Fix docker socket issues (https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket)
 
 ## 5. Monitor the application
 
