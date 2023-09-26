@@ -17,6 +17,6 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Install polls app
-WORKDIR /code/django-polls
-RUN python setup.py sdist
-RUN pip install dist/django-polls-0.1.tar.gz
+RUN cd django-polls &&  \
+    python setup.py sdist &&  \
+    pip install dist/django-polls-0.1.tar.gz

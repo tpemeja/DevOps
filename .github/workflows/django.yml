@@ -11,7 +11,7 @@ jobs:
       run: sudo docker-compose -f docker-compose.yml up
     - name: Analysing the code with pylint
       run: >
-        sudo docker-compose -u root -f docker-compose.yml run -rm web python 
+        sudo docker-compose -f docker-compose.yml run -rm web python 
         $(which pylint) --fail-under=${{vars.PYLINT_THRESHOLD}} $(git ls-files '*.py')
     - name: Run Django Tests
       run: |
