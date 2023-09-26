@@ -52,7 +52,7 @@ This project is supposed to progress by small step from a .
 - [X] Generate Django Docker image (https://learndjango.com/tutorials/django-docker-and-postgresql-tutorial)
  - Fix docker socket issues (https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket)
 - [X] Use Docker during GitHub Action
-
+- [ ] Use rootless Docker for locally and for GitHub actions
 ## 5. Monitor the application
 
 - [ ] ...
