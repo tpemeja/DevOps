@@ -51,6 +51,7 @@ This project is supposed to progress by small step from a .
  - Add user to **docker** group (`sudo usermod -aG docker ${USER} && su - $USER`)
 - [X] Generate Django Docker image (https://learndjango.com/tutorials/django-docker-and-postgresql-tutorial)
  - Fix docker socket issues (https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket)
+- [X] Use Docker during GitHub Action
 
 ## 5. Monitor the application
 
