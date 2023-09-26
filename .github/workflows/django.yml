@@ -16,9 +16,8 @@ jobs:
     steps:
     - name: Analysing the code with pylint
       run: >
-        docker-compose -u root -f docker-compose.yml run web python 
-        $(which pylint) --fail-under=${{vars.PYLINT_THRESHOLD}} $(git ls-files '*.py')
+        docker-compose run web pylint --fail-under=5 $(git ls-files '*.py')
     - name: Run Django Tests
       run: |
-        docker-compose -f docker-compose.yml run web python mysite/manage.py test
+        docker-compose run web python mysite/manage.py test
         echo $TEST
