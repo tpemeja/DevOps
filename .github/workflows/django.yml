@@ -9,11 +9,16 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: sudo docker-compose -f docker-compose.yml up
+
+  test:
+    needs: build
+    runs-on: self-hosted
+    steps:
     - name: Analysing the code with pylint
       run: >
-        sudo docker-compose -f docker-compose.yml run -rm web python 
+        docker-compose -u root -f docker-compose.yml run -rm web python 
         $(which pylint) --fail-under=${{vars.PYLINT_THRESHOLD}} $(git ls-files '*.py')
     - name: Run Django Tests
       run: |
-        sudo docker-compose -f docker-compose.yml run -rm web python mysite/manage.py test
+        docker-compose -f docker-compose.yml run -rm web python mysite/manage.py test
         echo $TEST
