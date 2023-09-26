@@ -8,12 +8,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker-compose -u root -f docker-compose.yml up
+      run: sudo docker-compose -f docker-compose.yml up
     - name: Analysing the code with pylint
       run: >
-        docker-compose -u root -f docker-compose.yml run -rm web python 
+        sudo docker-compose -u root -f docker-compose.yml run -rm web python 
         $(which pylint) --fail-under=${{vars.PYLINT_THRESHOLD}} $(git ls-files '*.py')
     - name: Run Django Tests
       run: |
-        docker-compose -u root -f docker-compose.yml run -rm web python mysite/manage.py test
+        sudo docker-compose -f docker-compose.yml run -rm web python mysite/manage.py test
         echo $TEST
