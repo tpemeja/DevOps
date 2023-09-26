@@ -19,4 +19,5 @@ COPY . .
 # Install polls app
 RUN cd django-polls &&  \
     python setup.py sdist &&  \
-    pip install dist/django-polls-0.1.tar.gz
+    pip install dist/django-polls-0.1.tar.gz && \
+    cd ..
