@@ -42,6 +42,7 @@ This project is supposed to progress by small step from a .
  - Use pylint with venv (`python $(which pylint)`)
  - Use environment variables in self-hosted runner with **$TEST** (Modify `.env` [TEST=test] and restart runner)
  - Define environment variables in GitHub Action **${{vars.$TEST}}** (Add variable in `github.com/PROJECT_NAME/settings/variables/actions`, for more information [GitHub Documentation](https://docs.github.com/en/actions/learn-github-actions/variables)
+ - [ ] Use `act` to test GitHub Actions locally (https://github.com/nektos/act)
  - [ ] Use `pytest` for additional testing
  - [ ] Create functional and unit testing
 
