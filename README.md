@@ -55,7 +55,7 @@ This project is supposed to progress by small step from a .
  - Fix docker socket issues (https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket)
 - [X] Use Docker during GitHub Action
 - [ ] Use rootless Docker for locally and for GitHub actions
-- [ ] Also use Podman
+- [ ] Also use Podman 
 
 ## 5. Monitor the application
 
