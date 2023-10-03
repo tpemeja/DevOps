@@ -25,6 +25,7 @@ This project is supposed to progress by small step from a .
  - Download Pycharm Community (https://www.jetbrains.com/pycharm/)
  - Add Pycharm to Favorites (https://askubuntu.com/questions/391439/how-can-i-set-up-pycharm-to-launch-from-the-launcher)
 - [ ] Setup and use AI collaborator (Github Collaborator, Codeium, ...)
+- [X] Create SSH Key and add it to GitHub (https://docs.github.com/en/enterprise-server@3.6/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux)
 
 ## 2. Create basic website using Django
 
