@@ -42,9 +42,10 @@ This project is supposed to progress by small step from a .
  - Use pylint with venv (`python $(which pylint)`)
  - Use environment variables in self-hosted runner with **$TEST** (Modify `.env` [TEST=test] and restart runner)
  - Define environment variables in GitHub Action **${{vars.$TEST}}** (Add variable in `github.com/PROJECT_NAME/settings/variables/actions`, for more information [GitHub Documentation](https://docs.github.com/en/actions/learn-github-actions/variables)
- - [ ] Use `act` to test GitHub Actions locally (https://github.com/nektos/act)
+ - [X] Use `act` to test GitHub Actions locally (https://github.com/nektos/act)
  - [ ] Use `pytest` for additional testing
  - [ ] Create functional and unit testing
+ - [X] Create Git Hooks for local development (https://www.hostinger.com/tutorials/how-to-use-git-hooks/)
 
 ## 4. Deploy the application using containers (https://semaphoreci.com/community/tutorials/dockerizing-a-python-django-web-application)
 
@@ -55,6 +56,7 @@ This project is supposed to progress by small step from a .
 - [X] Use Docker during GitHub Action
 - [ ] Use rootless Docker for locally and for GitHub actions
 - [ ] Also use Podman
+
 ## 5. Monitor the application
 
 - [ ] ...
