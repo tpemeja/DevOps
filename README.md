@@ -48,7 +48,7 @@ This project is supposed to progress by small step from a .
  - [ ] Create functional and unit testing
  - [X] Create Git Hooks for local development (https://www.hostinger.com/tutorials/how-to-use-git-hooks/ and change location `git config core.hooksPath hooks`)
 
-## 4. Deploy the application using containers (https://semaphoreci.com/community/tutorials/dockerizing-a-python-django-web-application)
+## 4. Deploy the application using containers (https://semaphoreci.com/community/tutorials/dockerizing-a-python-django-web-application, https://github.com/dnaprawa/dockerfile-best-practices#always-use-copy-instead-of-add-there-is-only-one-exception)
 
 - [X] Install Docker (https://docs.docker.com/engine/install/ubuntu/#install-from-a-package)
  - Add user to **docker** group (`sudo usermod -aG docker ${USER} && su - $USER`)
