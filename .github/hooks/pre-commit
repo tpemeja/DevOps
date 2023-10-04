@@ -1,0 +1,86 @@
+#!/usr/bin/env python
+
+import subprocess
+import sys
+import re
+
+# ANSI escape codes for text colors
+GREEN = "\033[32m"
+RED = "\033[31m"
+RESET = "\033[0m"
+
+# Define secret patterns (improved)
+SECRET_PATTERNS = [
+    r"(?i)api[_\s]*key\s*[=:]\s*[\'\"]?[A-Za-z0-9_]+[\'\"]?",  # Matches API keys with case-insensitivity
+    r"(?i)api[_\s]*secret[_\s]*[=:]\s*[\'\"]?[A-Za-z0-9_]+[\'\"]?",  # Matches API secrets with case-insensitivity
+    r"(?i)access[_\s]*token\s*[=:]\s*[\'\"]?[A-Za-z0-9_]+[\'\"]?",  # Matches access tokens with case-insensitivity
+    # Add more secret patterns as needed
+]
+
+# Define password patterns (improved)
+PASSWORD_PATTERNS = [
+    r"(?i)password[_\s]*[=:]\s*[\'\"]?[A-Za-z0-9!@#$%^&*()_+=-]+[\'\"]?",  # Matches passwords with case-insensitivity
+    r"(?i)pass[_\s]*phrase[_\s]*[=:]\s*[\'\"]?[A-Za-z0-9!@#$%^&*()_+=-]+[\'\"]?",  # Matches passphrases with case-insensitivity
+    r"(?i)auth[_\s]*key[_\s]*[=:]\s*[\'\"]?[A-Za-z0-9!@#$%^&*()_+=-]+[\'\"]?",  # Matches auth keys with case-insensitivity
+    # Add more password patterns as needed
+]
+
+
+def main():
+    # Define the files to be committed
+    staged_files = get_staged_files()
+
+    # Run checks or tasks on the staged files
+    all_valid = True
+    for file_path in staged_files:
+        if not is_file_valid(file_path):
+            print(f"{RED}Error: {file_path} is not valid. Commit aborted.{RESET}")
+            all_valid = False
+
+    if all_valid:
+        print(f"{GREEN}All checks passed. Commit allowed.{RESET}")
+    else:
+        sys.exit(1)
+
+def get_staged_files():
+    # Use 'git diff --cached --name-only' to get a list of staged files
+    try:
+        staged_files = subprocess.check_output(['git', 'diff', '--cached', '--name-only']).decode('utf-8').splitlines()
+        return staged_files
+    except subprocess.CalledProcessError:
+        print(f"{RED}Error: Unable to get staged files.{RESET}")
+        sys.exit(1)
+
+def is_file_valid(file_path):
+    # Add your custom checks here
+    # For demonstration purposes, let's assume all files are valid
+    if scan_for_secrets(file_path) or scan_for_passwords(file_path):
+        return False
+    return True
+
+def scan_for_secrets(file_path):
+    # Open the file and scan for secret patterns
+    with open(file_path, 'r', encoding='utf-8') as file:
+        content = file.read()
+        for pattern in SECRET_PATTERNS:
+            if re.search(pattern, content):
+                print(f"{RED}Error: Secret pattern found in {file_path}. Commit aborted.{RESET}")
+                return True
+
+    return False
+
+
+def scan_for_passwords(file_path):
+    # Open the file and scan for password patterns
+    with open(file_path, 'r', encoding='utf-8') as file:
+        content = file.read()
+        for pattern in PASSWORD_PATTERNS:
+            if re.search(pattern, content):
+                print(f"{RED}Error: Password pattern found in {file_path}. Commit aborted.{RESET}")
+                return True
+
+    return False
+
+
+if __name__ == "__main__":
+    main()
