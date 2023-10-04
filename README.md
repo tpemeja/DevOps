@@ -63,6 +63,7 @@ This project is supposed to progress by small step from a .
 - [ ] ...
 
 ## 6. Deploy on AWS
+
 - [ ] ...
 
 # References
