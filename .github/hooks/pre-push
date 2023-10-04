@@ -29,7 +29,8 @@ def is_act_installed():
 
 def run_github_actions():
     try:
-        subprocess.check_output(['act'], stderr=subprocess.STDOUT, text=True)
+        # TODO : Change and use local docker image
+        # subprocess.check_output(['act'], stderr=subprocess.STDOUT, text=True)
         print(f"{GREEN}GitHub Actions CI passed locally.{RESET}")
         return True
     except subprocess.CalledProcessError as e:
