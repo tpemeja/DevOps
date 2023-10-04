@@ -46,7 +46,7 @@ This project is supposed to progress by small step from a .
  - [X] Use `act` to test GitHub Actions locally (https://github.com/nektos/act)
  - [ ] Use `pytest` for additional testing
  - [ ] Create functional and unit testing
- - [X] Create Git Hooks for local development (https://www.hostinger.com/tutorials/how-to-use-git-hooks/)
+ - [X] Create Git Hooks for local development (https://www.hostinger.com/tutorials/how-to-use-git-hooks/ and change location `git config core.hooksPath hooks`)
 
 ## 4. Deploy the application using containers (https://semaphoreci.com/community/tutorials/dockerizing-a-python-django-web-application)
 
