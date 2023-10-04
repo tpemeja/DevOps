@@ -16,7 +16,7 @@ jobs:
     steps:
     - name: Run Django Tests
       run: |
-        sudo docker-compose run web python mysite/manage.py test
+        sudo docker-compose run web python mysite/manage.py test polls
         echo $TEST
 
     - name: Analysing the code with pylint
