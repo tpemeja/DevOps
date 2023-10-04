@@ -1,0 +1,45 @@
+#!/usr/bin/env python
+
+import subprocess
+import sys
+
+RED = "\033[31m"
+GREEN = "\033[32m"
+RESET = "\033[0m"
+
+
+def main():
+    # Ensure that act is installed
+    if not is_act_installed():
+        print_error("act is not installed. Please install it.")
+        sys.exit(1)
+
+    # Run the GitHub Actions CI locally
+    if not run_github_actions():
+        sys.exit(1)
+
+
+def is_act_installed():
+    try:
+        subprocess.check_output(['act', '--version'], stderr=subprocess.STDOUT, text=True)
+        return True
+    except subprocess.CalledProcessError:
+        return False
+
+
+def run_github_actions():
+    try:
+        subprocess.check_output(['act'], stderr=subprocess.STDOUT, text=True)
+        print(f"{GREEN}GitHub Actions CI passed locally.{RESET}")
+        return True
+    except subprocess.CalledProcessError as e:
+        print_error(f"GitHub Actions CI failed locally:\n{e.stdout}")
+        return False
+
+
+def print_error(message):
+    print(f"{RED}Error: {message}{RESET}")
+
+
+if __name__ == "__main__":
+    main()

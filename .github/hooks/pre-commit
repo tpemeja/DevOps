@@ -42,6 +42,7 @@ def main():
     else:
         sys.exit(1)
 
+
 def get_staged_files():
     # Use 'git diff --cached --name-only' to get a list of staged files
     try:
@@ -51,12 +52,14 @@ def get_staged_files():
         print(f"{RED}Error: Unable to get staged files.{RESET}")
         sys.exit(1)
 
+
 def is_file_valid(file_path):
     # Add your custom checks here
     # For demonstration purposes, let's assume all files are valid
     if scan_for_secrets(file_path) or scan_for_passwords(file_path):
         return False
     return True
+
 
 def scan_for_secrets(file_path):
     # Open the file and scan for secret patterns
