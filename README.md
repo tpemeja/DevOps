@@ -67,7 +67,6 @@ This project is supposed to progress by small step from a .
 - [ ] ...
 
 # References
-
 ## Documentations
 
 # Useful Links
