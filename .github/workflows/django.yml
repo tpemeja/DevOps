@@ -14,7 +14,7 @@ jobs:
     needs: build
     runs-on: self-hosted
     container:
-      image: django-website:latest  # Specify your custom Django Docker image here
+      image: devops-project_web:latest
     steps:
       - name: Run Django Tests
         run: |
