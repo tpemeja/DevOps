@@ -25,6 +25,8 @@ PASSWORD_PATTERNS = [
     # Add more password patterns as needed
 ]
 
+UNMATCH_PASSWORD_PATTERN = r".*\bpassword:\s*\${{\s*"
+
 
 def main():
     # Define the files to be committed
@@ -78,7 +80,7 @@ def scan_for_passwords(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
         for pattern in PASSWORD_PATTERNS:
-            if re.search(pattern, content):
+            if re.search(pattern, content) and not re.search(UNMATCH_PASSWORD_PATTERN, content):
                 print(f"{RED}Error: Password pattern found in {file_path}. Commit aborted.{RESET}")
                 return True
 
