@@ -13,8 +13,6 @@ jobs:
   test:
     needs: build
     runs-on: self-hosted
-    container:
-      image: devops-project_web:latest
     steps:
       - name: Run Django Tests
         run: |
