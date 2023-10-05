@@ -57,6 +57,7 @@ This project is supposed to progress by small step from a .
 - [X] Use Docker during GitHub Action
 - [ ] Use rootless Docker for locally and for GitHub actions
 - [ ] Also use Podman
+- [X] Automatically push Docker images on Docker Hub (The tag must match https://forums.docker.com/t/docker-push-error-requested-access-to-the-resource-is-denied/64468/7)
 
 ## 5. Monitor the application
 
