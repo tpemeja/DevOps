@@ -42,7 +42,7 @@ jobs:
           commit_hash=$(git rev-parse --short HEAD)
           
           # Generate a tag based on branch name and commit hash
-          tag_name="${branch_name}-${commit_hash}"
+          tag_name="${branch_name}-latest"
           
           # Use the tag name for building and pushing the image
           # docker tag devops_web:main-latest ${{ secrets.DOCKERHUB_USERNAME }}/devops_web:$tag_name 
