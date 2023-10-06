@@ -1,8 +1,11 @@
 version: "3.9"
 services:
   web:
+    image: tpemeja/devops_web:main-0fd34f4
     container_name: django-website
-    build: .
+    build:
+      context: .                                # Build context (Dockerfile location)
+      dockerfile: Dockerfile                    # Dockerfile name (optional)
     ports:
       - "8000:8000"
     command: python mysite/manage.py runserver 0.0.0.0:8000
