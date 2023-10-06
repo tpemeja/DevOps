@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   web:
-    image: tpemeja/devops_web:main-0fd34f4
+    image: tpemeja/devops_web:main-latest
     container_name: django-website
     build:
       context: .                                # Build context (Dockerfile location)
