@@ -20,3 +20,4 @@
 - [ ] Improve CI with new actions, maybe with credentials in self-hosted runner
 - [ ] Check how to do DevOps with Python (https://realpython.com/learning-paths/python-devops/, https://semaphoreci.com/community/tutorials/dockerizing-a-python-django-web-application, ...)
 - [ ] Use Docker image for act in pre-push git hook
+- [ ] Specify images and build in docker-compose.yml (/!\ The image name will the same as the one defined in the image section.)
