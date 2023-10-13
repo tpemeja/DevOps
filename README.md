@@ -48,7 +48,7 @@ This project is supposed to progress by small step from a .
  - [ ] Create functional and unit testing
  - [X] Create Git Hooks for local development (https://www.hostinger.com/tutorials/how-to-use-git-hooks/ and change location `git config core.hooksPath hooks`)
 
-## 4. Deploy the application using containers (https://semaphoreci.com/community/tutorials/dockerizing-a-python-django-web-application, https://github.com/dnaprawa/dockerfile-best-practices#always-use-copy-instead-of-add-there-is-only-one-exception)
+## 4. Create and use containers (https://semaphoreci.com/community/tutorials/dockerizing-a-python-django-web-application, https://github.com/dnaprawa/dockerfile-best-practices#always-use-copy-instead-of-add-there-is-only-one-exception)
 
 - [X] Install Docker (https://docs.docker.com/engine/install/ubuntu/#install-from-a-package)
  - Add user to **docker** group (`sudo usermod -aG docker ${USER} && su - $USER`)
@@ -56,14 +56,24 @@ This project is supposed to progress by small step from a .
  - Fix docker socket issues (https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket)
 - [X] Use Docker during GitHub Action
 - [ ] Use rootless Docker for locally and for GitHub actions
-- [ ] Also use Podman
 - [X] Automatically push Docker images on Docker Hub (The tag must match https://forums.docker.com/t/docker-push-error-requested-access-to-the-resource-is-denied/64468/7)
+- [ ] Also use Podman
 
-## 5. Monitor the application
 
-- [ ] ...
+## 5. Deploy containers
+- [X] Deploy locally
+ - Create and use docker-compose.yml
+ - Use docker command
+- [ ] Deploy on NAS
+ - Configure Network with VPN
+ - Secure SSH
+ - Create container
+ - Access website
+- [ ] Deploy on AWS
+- [ ] Use Kubernetes
 
-## 6. Deploy on AWS
+## 6. Monitor the application
+
 - [ ] ...
 
 # References
